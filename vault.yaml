@@ -1,5 +1,5 @@
 - name: demo on valut
-  hosts: db
+  hosts: all
   vars_files:
   - credentials.yaml
   tasks:
