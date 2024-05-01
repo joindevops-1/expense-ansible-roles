@@ -1,0 +1,7 @@
+- name: demo on valut
+  hosts: db
+  vars_files:
+  - credentials.yaml
+  tasks:
+  - name: ping the server
+    ansible.builtin.ping:
