@@ -1,2 +1,5 @@
 [db]
-db.daws78s.online ansible_password=DevOps321
+db.daws78s.online
+
+[all:vars]
+ansible_password=DevOps321
