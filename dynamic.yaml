@@ -1,5 +1,5 @@
 - name: Test connectivity to backend servers
-  hosts: tag_Name_Backend*
+  hosts: all
   gather_facts: false
 
   tasks:
