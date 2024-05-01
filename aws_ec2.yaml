@@ -6,7 +6,7 @@ keyed_groups:
     prefix: ''
     separator: ''
 filters:
-  "tag:Name": "backend*"  # Instances whose Name tag starts with 'backend'
+  "tag:Name": "Backend*"  # Instances whose Name tag starts with 'backend'
 hostnames:
   - tag:Name  # Use the Name tag as the inventory hostname
 compose:
