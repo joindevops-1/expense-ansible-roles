@@ -1,0 +1,13 @@
+plugin: aws_ec2
+regions:
+  - us-east-1  # Specify your region(s)
+keyed_groups:
+  - key: tags['Name']  # Assuming 'Name' is a tag on your instances
+    prefix: ''
+    separator: ''
+filters:
+  "tag:Name": "backend*"  # Instances whose Name tag starts with 'backend'
+hostnames:
+  - tag:Name  # Use the Name tag as the inventory hostname
+compose:
+  ansible_host: public_ip_address  # Use the public IP as the ansible host variable
