@@ -5,3 +5,8 @@
   tasks:
     - name: Ping test
       ansible.builtin.ping:
+
+    - name: Install
+      ansible.builtin.dnf:
+        name: mysql
+        state: latest
