@@ -1,7 +1,7 @@
 - name: Test connectivity to backend servers
   hosts: all
   gather_facts: false
-
+  become: yes
   tasks:
     - name: Ping test
       ansible.builtin.ping:
